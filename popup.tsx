@@ -1,5 +1,4 @@
-// import { } from "plasmo"
 
-const popup = () => chrome.runtime.openOptionsPage()
-
-export default popup
+export default () => {
+    (() => chrome.runtime.openOptionsPage())()
+}
